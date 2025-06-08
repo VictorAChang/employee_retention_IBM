@@ -7,13 +7,24 @@ Scope of the Problem and Business Impact
 High employee turnover costs businesses significantly. According to Gallup (2023), replacing an employee can cost one-half to two times the employee’s annual salary. For a mid-sized organization, this could mean hundreds of thousands to millions of dollars annually. Furthermore, turnover negatively affects productivity and employee morale. For instance, U.S. companies lose about $1 trillion annually due to voluntary turnover (Gallup, 2023).
 # Data Exploration
 ### _Data Source_
-A relevant dataset for analyzing employee retention is the “HR Analytics: Employee Attrition & Performance” dataset, available on Kaggle: https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset. This dataset includes information on employees from a fictional IBM dataset, covering personal demographics, job roles, performance metrics, and attrition status. It is commonly used in HR analytics studies due to its well-structured format and completeness.
+Data is produced by Portobello Tech, an app innovator that has devised an intelligent way of predicting employee turnover within the company. The data source is from Kaggle at https://www.kaggle.com/datasets/akshayhedau/employee-turnover-analytics-dataset?resource=download. Data from prior evaluations show the employee’s satisfaction at the workplace. The data could be used to identify patterns in work style and their interest to continue to work in the company. The HR Department owns the data and uses it to predict employee turnover. Employee turnover refers to the total number of workers who leave a company over a certain time period. 
 ### _Describe the Data_
-The dataset contains 1,470 rows and 35 columns. Each row represents an employee, while each column includes features such as:
-•	Age, Gender, Education, Job Role
-•	Monthly Income, YearsAtCompany, Work Life Balance
-•	Attrition (Yes/No – target variable)
-The diversity and richness of this dataset allow for exploring various factors contributing to employee attrition.
+The dataset consists of 14999 rows and 10 columns:
+<h3> Columns: </h1>
+* satisfaction_level: From 0-1, how satisfied employees are since 
+* last_evaluation: Unsure, but most likely from 0-1, measuring employee performance
+* number_project = From 2-7, how many project the employee has work on
+* average_monthly_hours = Average number of hours worked each month
+* time_spend_company = How long they have been at the company in years
+* Work_accident = If the employee has had an accident at work
+* left = If the employee has left the company
+* promotion_last_5years = If the employee has had a promotion in the last 5 years
+* sales = Unsure, but most likely the role within sales that each employee works in
+* salary = employee salary
+
+#### _First 5 rows of the dataset_
+![alt text](images/head.png)
+
 
 # Analytical Techniques
 ### _Descriptive Analytics_
@@ -31,12 +42,14 @@ What to look for in Python:
 •	Heatmaps of correlations
 •	Logistic regression to quantify feature importance
 •	Decision trees or SHAP values for explainability
+![alt text](image.png)
 ### _Exploratory Visualization_
 Suggestions:
 •	Bar chart of attrition rate by job role
 •	Box plots comparing monthly income between those who stayed and those who left
 •	Heatmap showing correlation of variables with attrition
 Use seaborn and matplotlib libraries to create these visuals.
+![alt text](image-1.png)
 # Insights and Recommendations
 ### _Actionable Insights_
 Based on expected trends:
