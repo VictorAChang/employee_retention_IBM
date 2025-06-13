@@ -5,7 +5,9 @@
 <div style="font-size: 125%; text-align:center;"> Employee Retention </div>
 
 <div style="font-size: 125%; text-align:center;"> Written by Victor Chang | MBA 610 - Foundations of Data Analytics </div>
-<br></br>
+
+</br><br>
+
 <h1 style="text-align:center;"> Executive Summary </h1>
 
 Employee retention remains one of the most pressing challenges in today’s competitive labor market. High turnover rates not only increase recruitment and training costs but also disrupt organizational continuity and morale. This paper explores employee retention by examining its scope, causes, and business impact. It uses a relevant dataset to uncover patterns and root causes through descriptive and diagnostic analytics, with recommendations aimed at helping organizations improve employee engagement and reduce turnover.
@@ -18,7 +20,9 @@ Employee retention refers to an organization’s ability to keep its employees o
 
 <b style="font-size: 125%;"> Scope of the Problem and Business Impact </b>
 
-High employee turnover costs businesses significantly. According to Gallup (2023), replacing an employee can cost half to two times the employee’s annual salary. For a mid-sized organization, this could mean hundreds of thousands to millions of dollars annually. Furthermore, turnover negatively affects productivity and employee morale. For instance, U.S. companies lose about $1 trillion annually due to voluntary turnover (Gallup, 2023).
+High employee turnover costs businesses significantly. According to Gallup (2023), replacing an employee can cost one-half to two times the employee’s annual salary. For a mid-sized organization, this could mean hundreds of thousands to millions of dollars annually. U.S. companies lose about $1 trillion annually due to voluntary turnover (Gallup, 2023).
+
+High employee turnover also negatively impacts businesses in non-direct non-financial ways that can hinder long term success. One major consequence is the loss of institutional knowledge, which disrupts operations and reduces overall efficiency when experienced employees leave (Lancaster, 2024). Turnover also burdens remaining staff, increasing workloads and stress levels, which can lead to burnout and lower morale. This environment often fosters a toxic workplace culture where engagement and collaboration suffer (Lancaster, 2024). 
 
 <h1 style="text-align:center;"> Data Exploration </h1>
 
@@ -28,11 +32,26 @@ Data is produced by Portobello Tech, an app innovator that has devised an intell
 
 <b style="font-size: 125%;"> Data Description </b>
 
-<i> Data Information </i>
+<i> First Five rows of the dataset </i>
+
+![alt text](images/head.png)
+
+<i> Data Columns </i>
+
+* satisfaction_level: From 0-1, how satisfied employees are since 
+* last_evaluation: Unsure, but most likely from 0-1, measuring employee performance
+* number_project = From 2-7, how many project the employee has work on
+* average_monthly_hours = Average number of hours worked each month
+* time_spend_company = How long they have been at the company in years
+* Work_accident = If the employee has had an accident at work
+* left = If the employee has left the company
+* promotion_last_5years = If the employee has had a promotion in the last 5 years
+* sales = Unsure, but most likely the role within sales that each employee works in
+* salary = employee salary
 
 <div align="center">
 
-<h2> Dataset Overview </h2>
+<b style="font-size: 110%;"> Data Information </b>
 
 | #  | Column                 | Non-Null Count | Dtype   |
 |----|------------------------|----------------|---------|
@@ -53,22 +72,6 @@ Data is produced by Portobello Tech, an app innovator that has devised an intell
 
 ![alt text](images/describe.png)
 
-<i> Data Columns </i>
-
-* satisfaction_level: From 0-1, how satisfied employees are since 
-* last_evaluation: Unsure, but most likely from 0-1, measuring employee performance
-* number_project = From 2-7, how many project the employee has work on
-* average_monthly_hours = Average number of hours worked each month
-* time_spend_company = How long they have been at the company in years
-* Work_accident = If the employee has had an accident at work
-* left = If the employee has left the company
-* promotion_last_5years = If the employee has had a promotion in the last 5 years
-* sales = Unsure, but most likely the role within sales that each employee works in
-* salary = employee salary
-
-<i> First Five rows of the dataset </i>
-
-![alt text](images/head.png)
 
 <h1 style="text-align:center;"> Analytical Techniques </h1>
 
@@ -79,30 +82,36 @@ Expected analysis: Use frequency counts, distributions, and cross-tabulations. Y
 •	Roles with high travel requirements or lower job satisfaction correlate with higher turnover.
 •	Departments like Sales or Human Resources might show higher attrition rates.
 
+<div align="center">
+
+<b style="font-size: 110%;"> Histogram </b> </br>
+
+<img src="image-1.png">
+
+</div>
+
 <b style="font-size: 125%;"> Diagnostic Analytics </b>
 
 Expected analysis: Multivariate analysis and correlation. Common findings include:
 •	Low job satisfaction and poor work-life balance are strong predictors of attrition.
 •	Employees with lower income or fewer opportunities for promotion are more likely to leave.
 
-<div align="center">
-<h2> Correlations </h2>
-
-<img src="image.png">
-</div>
 
 What to look for in Python:
 •	Heatmaps of correlations
 •	Logistic regression to quantify feature importance
 •	Decision trees or SHAP values for explainability
 
-<div align="center">
-<h2> Bar Charts </h2>
 
-<img src="image-1.png">
+<div align="center">
+
+<b style="font-size: 110%;"> Heatmap </b>
+
+<img src="image.png">
+
 </div>
 
-
+</br>
 
 <h1 style="text-align:center;"> Insights and Recommendations </h1>
 
@@ -137,6 +146,7 @@ Employee retention is both a human and business imperative. With the right data 
 
 * Anvari, R., JianFu, Z., & Chermahini, S. H. (2014). Effective Strategy for Solving Voluntary Turnover Problem among Employees. Procedia, Social and Behavioral Sciences, 129, 186–190. https://doi.org/10.1016/j.sbspro.2014.03.665
 * Gallup. (2023). The True Cost of Employee Turnover. https://www.gallup.com/workplace
+* Lancaster, L. (2024, August 16). Effects of High Turnover Among Employees. https://stratus.hr/resources/effects-of-high-employee-turnover
 * Kaggle. (n.d.). Employee Turnover Analystics Dataset. https://www.kaggle.com/datasets/akshayhedau/employee-turnover-analytics-dataset?resource=download
 * Ramos, P. R. (2019). The effectiveness of compensation in maintaining employee retention. Social Sciences & Humanities Open, 1, Article 100001. https://doi.org/10.1016/j.ssaho.2019.100001
 
