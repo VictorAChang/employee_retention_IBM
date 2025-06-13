@@ -36,6 +36,8 @@ Data is produced by Portobello Tech, an app innovator that has devised an intell
 
 ![alt text](images/head.png)
 
+The image above shows the first five rows of the dataset, using python's pandas library to display the data as a dataframe for ease of view. 
+
 <i> Data Columns </i>
 
 * satisfaction_level: From 0-1, how satisfied employees are since 
@@ -48,6 +50,8 @@ Data is produced by Portobello Tech, an app innovator that has devised an intell
 * promotion_last_5years = If the employee has had a promotion in the last 5 years
 * sales = Unsure, but most likely the role within sales that each employee works in
 * salary = employee salary
+
+The columns above describe in more detail what each row means or represents. Some of the values are not exactly known as the dataset in kaggle did not describe exactly what they are and we do not want to assume incorrectly and make wrong predictions based on those columns. 
 
 <div align="center">
 
@@ -68,39 +72,19 @@ Data is produced by Portobello Tech, an app innovator that has devised an intell
 
 </div>
 
+Data information above shows that the dataset does not contain any null or missing values and also displays the data types of each column. It is important to know the data types as they affect the way the data is manipulated to extract insights and predictions about employee retention. 
+
 <i> Data Statistics </i>
 
 ![alt text](images/describe.png)
 
+The table above shows important statistic information about our dataset. It is important especially important to pay attention to the difference between mean and median values. Huge differences among these two values is an indicator that the data might have too many outliers and may be skewed, needing further cleaning to derive accurate insights. Looking at the max and min values can also show if there are values that simply do not make sense. Most of the values from this dataset are within normal ranges, and do not need further cleaning to derive important conclusions. 
 
 <h1 style="text-align:center;"> Analytical Techniques </h1>
 
-<b style="font-size: 125%;"> Descriptive Analytics </b>
-
-Expected analysis: Use frequency counts, distributions, and cross-tabulations. You’ll likely observe that:
-•	Younger employees and those with fewer years at the company have higher attrition.
-•	Roles with high travel requirements or lower job satisfaction correlate with higher turnover.
-•	Departments like Sales or Human Resources might show higher attrition rates.
-
-<div align="center">
-
-<b style="font-size: 110%;"> Histogram </b> </br>
-
-<img src="image-1.png">
-
-</div>
-
 <b style="font-size: 125%;"> Diagnostic Analytics </b>
 
-Expected analysis: Multivariate analysis and correlation. Common findings include:
-•	Low job satisfaction and poor work-life balance are strong predictors of attrition.
-•	Employees with lower income or fewer opportunities for promotion are more likely to leave.
-
-
-What to look for in Python:
-•	Heatmaps of correlations
-•	Logistic regression to quantify feature importance
-•	Decision trees or SHAP values for explainability
+Diagnostic analytics is a method in data analysis that digs into historical data to determine why certain events occurred, addressing the question, “Why did this happen?”. It employs techniques such as drill down, data mining, correlations, and regression to reveal underlying causes behind observed trends or anomalies (Investopedia, n.d.; NetSuite, 2021). The value of diagnostic analytics lies in its capacity to uncover root causes and contributing factors, such as changes in customer behavior, operational inefficiencies, or external influences, which empowers businesses to make targeted improvements, prevent issues from reoccurring, and refine strategies for better outcomes (Investopedia, n.d.; NetSuite, 2021).
 
 
 <div align="center">
@@ -110,6 +94,25 @@ What to look for in Python:
 <img src="image.png">
 
 </div>
+
+The correlation matrix above, which was created using python's library seaborn, displays the different correlation values among all columns in the table. Focusing on employee turnover, which is the "left" column, we see that the columns with the highest correlation to this column are satisfaction level, work accidents, time spent at the company, and salary. Columns with high correlation help derive stronger and more confident insights that demonstrate more value to stakeholders. 
+
+</br>
+
+
+<b style="font-size: 125%;"> Descriptive Analytics </b>
+
+Descriptive analytics refers to the process of examining historical data to answer the fundamental question: “What happened?” By aggregating, organizing, and visualizing past information, such as sales figures, customer transactions, or operational metrics (Investopedia, n.d.; NetSuite, 2021). This approach helps stakeholders track trends, identify areas of inefficiency, and benchmark results against goals or industry standards. The importance of descriptive analytics lies in its ability to transform raw, complex datasets into digestible insights, enabling decision makers to establish a factual basis for deeper analysis or strategy development (NetSuite, 2021).
+
+<div align="center">
+
+<b style="font-size: 110%;"> Histogram </b> </br>
+
+<img src="image-1.png">
+
+</div>
+
+The histograms above show us different trends compared to employee turnover. 
 
 </br>
 
