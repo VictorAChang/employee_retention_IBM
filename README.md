@@ -66,7 +66,7 @@ Data is produced by Portobello Tech, an app innovator that has devised an intell
 * sales = Unsure, but most likely the role within sales that each employee works in
 * salary = employee salary
 
-<i> First 5 rows of the dataset </i>
+<i> First Five rows of the dataset </i>
 
 ![alt text](images/head.png)
 
