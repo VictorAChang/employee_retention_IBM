@@ -6,7 +6,7 @@
 
 <div style="font-size: 125%; text-align:center;"> Written by Victor Chang | MBA 610 - Foundations of Data Analytics </div>
 <br></br>
-<h1 style="text-align:center;">Executive Summary </h1>
+<h1 style="text-align:center;"> Executive Summary </h1>
 
 Employee retention remains one of the most pressing challenges in today’s competitive labor market. High turnover rates not only increase recruitment and training costs but also disrupt organizational continuity and morale. This paper explores employee retention by examining its scope, causes, and business impact. It uses a relevant dataset to uncover patterns and root causes through descriptive and diagnostic analytics, with recommendations aimed at helping organizations improve employee engagement and reduce turnover.
 
