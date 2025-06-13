@@ -4,7 +4,7 @@
 
 <div style="font-size: 125%; text-align:center;"> Employee Retention </div>
 
-<div style="font-size: 125%; text-align:center;"> Written by Victor Chang | MBA-610-Foundation of a Data Analytics </div>
+<div style="font-size: 125%; text-align:center;"> Written by Victor Chang | MBA 610 - Foundations of Data Analytics </div>
 <br></br>
 <h1 style="text-align:center;">Executive Summary </h1>
 
@@ -14,12 +14,11 @@ Employee retention remains one of the most pressing challenges in today’s comp
 
 <b style="font-size: 125%;"> Employee Retention </b>
 
-Employee retention refers to an organization’s ability to keep its employees over time. It is a critical aspect of workforce management, directly influencing operational efficiency, company culture, and financial performance. Retention issues often arise from dissatisfaction with leadership, limited growth opportunities, inadequate compensation, or poor work-life balance (Society for Human Resource Management [SHRM], 2022).
+Employee retention refers to an organization’s ability to keep its employees over time. It is a critical aspect of workforce management, directly influencing operational efficiency, company culture, and financial performance. Retention issues often arise from dissatisfaction with leadership, limited growth opportunities, inadequate compensation, or poor work-life balance (Ramos, 2019). High employee turnover often leads to elevated recruitment and training expenses, reduced productivity, and a loss of experienced personnel. When employees frequently resign, it also undermines team stability and hinders long-term strategic planning (Anvari, JianFu, & Chermahini, 2014).
 
 <b style="font-size: 125%;"> Scope of the Problem and Business Impact </b>
 
-Scope of the Problem and Business Impact
-High employee turnover costs businesses significantly. According to Gallup (2023), replacing an employee can cost one-half to two times the employee’s annual salary. For a mid-sized organization, this could mean hundreds of thousands to millions of dollars annually. Furthermore, turnover negatively affects productivity and employee morale. For instance, U.S. companies lose about $1 trillion annually due to voluntary turnover (Gallup, 2023).
+High employee turnover costs businesses significantly. According to Gallup (2023), replacing an employee can cost half to two times the employee’s annual salary. For a mid-sized organization, this could mean hundreds of thousands to millions of dollars annually. Furthermore, turnover negatively affects productivity and employee morale. For instance, U.S. companies lose about $1 trillion annually due to voluntary turnover (Gallup, 2023).
 
 <h1 style="text-align:center;"> Data Exploration </h1>
 
@@ -80,32 +79,29 @@ Expected analysis: Use frequency counts, distributions, and cross-tabulations. Y
 •	Roles with high travel requirements or lower job satisfaction correlate with higher turnover.
 •	Departments like Sales or Human Resources might show higher attrition rates.
 
-<b> Diagnostic Analytics </b>
+<b style="font-size: 125%;"> Diagnostic Analytics </b>
 
 Expected analysis: Multivariate analysis and correlation. Common findings include:
 •	Low job satisfaction and poor work-life balance are strong predictors of attrition.
 •	Employees with lower income or fewer opportunities for promotion are more likely to leave.
+
+<div align="center">
+<h2> Correlations </h2>
+
+<img src="image.png">
+</div>
+
 What to look for in Python:
 •	Heatmaps of correlations
 •	Logistic regression to quantify feature importance
 •	Decision trees or SHAP values for explainability
 
-<div align='center'>
-<img src="image.png">
-</div>
+<div align="center">
+<h2> Bar Charts </h2>
 
-
-<b style="font-size: 125%;"> Exploratory Visualization </b>
-
-Suggestions:
-•	Bar chart of attrition rate by job role
-•	Box plots comparing monthly income between those who stayed and those who left
-•	Heatmap showing correlation of variables with attrition
-Use seaborn and matplotlib libraries to create these visuals.
-
-<div align='center'>
 <img src="image-1.png">
 </div>
+
 
 
 <h1 style="text-align:center;"> Insights and Recommendations </h1>
@@ -139,8 +135,10 @@ Employee retention is both a human and business imperative. With the right data 
 
 <h1 style="text-align:center;"> References </h1>
 
+* Anvari, R., JianFu, Z., & Chermahini, S. H. (2014). Effective Strategy for Solving Voluntary Turnover Problem among Employees. Procedia, Social and Behavioral Sciences, 129, 186–190. https://doi.org/10.1016/j.sbspro.2014.03.665
 * Gallup. (2023). The True Cost of Employee Turnover. https://www.gallup.com/workplace
-* Society for Human Resource Management (SHRM). (2022). Managing for Employee Retention. https://www.shrm.org/resourcesandtools/hr-topics/employee-relations/pages/managing-employee-retention.aspx
-* Kaggle. (n.d.). HR Analytics: Employee Attrition & Performance. https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset
+* Kaggle. (n.d.). Employee Turnover Analystics Dataset. https://www.kaggle.com/datasets/akshayhedau/employee-turnover-analytics-dataset?resource=download
+* Ramos, P. R. (2019). The effectiveness of compensation in maintaining employee retention. Social Sciences & Humanities Open, 1, Article 100001. https://doi.org/10.1016/j.ssaho.2019.100001
+
  
 
