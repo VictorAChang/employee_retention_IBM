@@ -4,7 +4,7 @@ import streamlit as st
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
-# from sklearn.ensemble import RandomForestClassifier
+import plotly.express as px
 
 # Page title
 st.title("Employee Attrition Dashboard")
@@ -17,18 +17,24 @@ def load_data():
 df = load_data()
 st.write("### Dataset Preview", df.head())
 
-# Sidebar filters
-satisfaction = st.slider("Satisfaction Level", 0.0, 1.0, 0.5)
-salary = st.selectbox("Salary Level", df['salary'].unique())
+df['salary'] = df['salary'].map({'low':0, 'medium':1, 'high':2})
 
-# Top features - placeholder chart
-st.write("### Top 5 Features Predicting Attrition")
-# Assume you've trained a model elsewhere and saved importances
-# Plot dummy example
-features = ['satisfaction_level', 'time_spend_company', 'salary', 'promotion_last_5years', 'average_monthly_hours']
-importances = [0.3, 0.25, 0.2, 0.15, 0.1]
-fig, ax = plt.subplots()
-sns.barplot(x=importances, y=features, ax=ax)
-st.pyplot(fig)
+# Sidebar: select feature to explore against attrition
+feature = st.selectbox(
+    "Select a feature to compare against employee attrition:",
+    ["satisfaction_level", "time_spend_company", "Work_accident", "salary"]
+)
 
-# Optional: Add prediction model (e.g., "what-if" input)
+# Map 'left' to more human-readable labels
+df["left_label"] = df["left"].map({0: "Stayed", 1: "Left"})
+
+fig = px.histogram(
+    df,
+    y=feature,
+    x="left_label",
+    color="left_label",
+    title=f"Distribution of {feature.replace('_', ' ').capitalize()} by Employee Status",
+    labels={"left_label": "Employee Status", feature: feature.replace("_", " ").capitalize()}
+)
+
+st.plotly_chart(fig, use_container_width=True)

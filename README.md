@@ -147,13 +147,14 @@ In parallel, increasing transparency around learning and advancement opportuniti
 
 <h1 style="text-align:center;"> Communication </h1>
 
+
 <b style="font-size: 125%;"> Findings </b>
 
-Create dashboards or infographics that highlight:
-•	Top 5 features most associated with attrition
-•	Summary of employee demographics vs. attrition likelihood
-•	“What-if” scenarios using model predictions
-Ensure visuals are intuitive for a non-technical audience by minimizing jargon and emphasizing takeaways.
+<i style="font-size: 100%;"> Live Employee Attrition Dashboard: </i>
+
+Explore key features influencing attrition and run interactive “what-if” simulations:
+
+👉 [Launch the App](https://employee-retention-analysis.streamlit.app/)
 
 <h1 style="text-align:center;"> Conclusion </h1>
 
