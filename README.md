@@ -10,7 +10,7 @@
 
 <h1 style="text-align:center;"> Executive Summary </h1>
 
-Employee retention remains one of the most pressing challenges in today’s competitive labor market. High turnover rates not only increase recruitment and training costs but also disrupt organizational continuity and morale. This paper explores employee retention by examining its scope, causes, and business impact. It uses a relevant dataset to uncover patterns and root causes through descriptive and diagnostic analytics, with recommendations aimed at helping organizations improve employee engagement and reduce turnover.
+Employee retention is a critical component of workforce management, directly impacting operational efficiency, company culture, and long-term performance. High turnover not only drives up recruitment and training costs, estimated at over $1 trillion annually in the U.S., but also erodes institutional knowledge, morale, and strategic continuity. This analysis uses descriptive and diagnostic analytics to explore patterns in employee behavior, focusing on satisfaction, tenure, salary, and other workplace factors. Findings indicate that low satisfaction, shorter tenure, and lower compensation are strong predictors of employee turnover. Based on these insights, this report recommends actionable strategies including mentorship programs and transparent career development to help organizations proactively address attrition and build a more engaged, resilient workforce.
 
 <h1 style="text-align:center;"> Introduction </h1>
 
@@ -84,7 +84,7 @@ The table above shows important statistic information about our dataset. It is i
 
 <b style="font-size: 125%;"> Diagnostic Analytics </b>
 
-Diagnostic analytics is a method in data analysis that digs into historical data to determine why certain events occurred, addressing the question, “Why did this happen?”. It employs techniques such as drill down, data mining, correlations, and regression to reveal underlying causes behind observed trends or anomalies (Investopedia, n.d.; NetSuite, 2021). The value of diagnostic analytics lies in its capacity to uncover root causes and contributing factors, such as changes in customer behavior, operational inefficiencies, or external influences, which empowers businesses to make targeted improvements, prevent issues from reoccurring, and refine strategies for better outcomes (Investopedia, n.d.; NetSuite, 2021).
+Diagnostic analytics is a method in data analysis that digs into historical data to determine why certain events occurred, addressing the question, “Why did this happen?”. It employs techniques such as drill down, data mining, correlations, and regression to reveal underlying causes behind observed trends or anomalies (Drury, 2025; Holliday, 2021). The value of diagnostic analytics lies in its capacity to uncover root causes and contributing factors, such as changes in customer behavior, operational inefficiencies, or external influences, which empowers businesses to make targeted improvements, prevent issues from reoccurring, and refine strategies for better outcomes (Drury, 2025; Holliday, 2021).
 
 
 <div align="center">
@@ -102,7 +102,7 @@ The correlation matrix above, which was created using python's library seaborn, 
 
 <b style="font-size: 125%;"> Descriptive Analytics </b>
 
-Descriptive analytics refers to the process of examining historical data to answer the fundamental question: “What happened?” By aggregating, organizing, and visualizing past information, such as sales figures, customer transactions, or operational metrics (Investopedia, n.d.; NetSuite, 2021). This approach helps stakeholders track trends, identify areas of inefficiency, and benchmark results against goals or industry standards. The importance of descriptive analytics lies in its ability to transform raw, complex datasets into digestible insights, enabling decision makers to establish a factual basis for deeper analysis or strategy development (NetSuite, 2021).
+Descriptive analytics refers to the process of examining historical data to answer the fundamental question: “What happened?” By aggregating, organizing, and visualizing past information, such as sales figures, customer transactions, or operational metrics (Kelly, 2024; Morris, 2021). This approach helps stakeholders track trends, identify areas of inefficiency, and benchmark results against goals or industry standards. The importance of descriptive analytics lies in its ability to transform raw, complex datasets into digestible insights, enabling decision makers to establish a factual basis for deeper analysis or strategy development (Morris, 2021).
 
 <div align="center">
 
@@ -112,7 +112,24 @@ Descriptive analytics refers to the process of examining historical data to answ
 
 </div>
 
-The histograms above show us different trends compared to employee turnover. 
+Focusing on just the columns that have high correlation values to employee turnover, the histograms above show the distribution of the respective columns. 
+
+<i> Satisfaction Levels </i>
+
+We can see that employee turover is extremely high among employees whose satisfaction level is almost zero. Satisfaction levels aroud 0.4 also sem to show a relatively high employee turnover, higher than satisfaction levels aroud 0.2.  
+
+<i> Time Spent at the Company </i>
+
+The higher numbers of employee turnover seem to be for employees who spent between 3-5 years at the company. It seems that employees who are past 7 years at the company have zero to almost zero employee turnover. 
+
+<i> Work Accidents </i>
+
+Employee turnover for work accidents does seem to show a slightly higher employee turnover for employees who have no work accidents.
+
+<i> Salary </i>
+
+Salary seems to have a direct inverse correlation with employee turnover. Employees with higher salaries have a smaller chance leaving the company. In fact, employees with high salaries show an extremely low chance of leaving the company.  
+
 
 </br>
 
@@ -120,16 +137,13 @@ The histograms above show us different trends compared to employee turnover.
 
 <b style="font-size: 125%;"> Actionable Insights </b>
 
-Based on expected trends:
-•	Employees with less tenure, lower salaries, and poor job satisfaction are most likely to leave.
-•	Work-life balance and career development opportunities are consistent drivers of retention.
+Based on the trends observed through descriptive and diagnostic analytics, employees with shorter tenure, lower salaries, and reduced job satisfaction are most likely to leave the organization. These findings are supported by the data, which show that turnover rates are especially high among employees with low satisfaction scores and minimal time at the company. Additionally, salary plays a significant role: those earning lower wages are far more likely to depart, while higher earning employees rarely leave. Beyond compensation, diagnostic insights suggest that non-financial factors such as work life balance and opportunities for career development are key drivers of retention. When employees perceive limited growth potential or experience burnout due to poor work life integration, they are more inclined to seek opportunities elsewhere. These factors emphasize the importance of not only improving pay structures but also fostering a supportive and growth oriented work environment to reduce attrition.
 
 <b style="font-size: 125%;"> Solutions and Strategies </b>
 
-Recommendations include:
-•	Implement targeted retention strategies such as mentorship for new employees.
-•	Increase transparency around career progression and provide continuous learning.
-•	Use predictive analytics models to identify at-risk employees early and intervene (SHRM, 2022).
+To enhance employee retention, organizations should implement mentorship programs and increase transparency around career progression through continuous learning. Mentorship helps new hires feel supported and integrated, significantly reducing early stage turnover. Companies that offer structured mentoring report stronger engagement and retention outcomes, as these programs build trust, foster a sense of belonging, and accelerate employee development (Herbert, 2025; Ward, 2024). 
+
+In parallel, increasing transparency around learning and advancement opportunities, such as through onboarding support, skill building resources, or clearly defined development tracks, empower employees to take ownership of their growth. When workers feel invested in and understand how they can progress, they are more likely to stay committed to the organization. These strategies directly address common causes of turnover such as low satisfaction, limited support, and unclear growth paths.
 
 <h1 style="text-align:center;"> Communication </h1>
 
@@ -143,15 +157,21 @@ Ensure visuals are intuitive for a non-technical audience by minimizing jargon a
 
 <h1 style="text-align:center;"> Conclusion </h1>
 
-Employee retention is both a human and business imperative. With the right data and analytics, organizations can understand why employees leave and implement strategies to increase engagement and loyalty. By proactively addressing root causes, companies can create a more stable and productive workforce. 
+Employee retention is both a strategic priority and a reflection of organizational health. Through targeted analysis, we can better understand the underlying factors that lead to turnover and apply data driven solutions to prevent it. By investing in mentorship, clarifying career progression, and focusing on workplace satisfaction, companies can help reduce costly attrition while also fostering a supportive culture that promotes growth and loyalty. With the right analytics and action, retention becomes a competitive advantage.
 
 <h1 style="text-align:center;"> References </h1>
 
 * Anvari, R., JianFu, Z., & Chermahini, S. H. (2014). Effective Strategy for Solving Voluntary Turnover Problem among Employees. Procedia, Social and Behavioral Sciences, 129, 186–190. https://doi.org/10.1016/j.sbspro.2014.03.665
+* Drury, A. (2025, May 8). Data Analytics: What It Is, How It's Used, and 4 Basic Techniques. Investopedia. https://www.investopedia.com/terms/d/data-analytics.asp
 * Gallup. (2023). The True Cost of Employee Turnover. https://www.gallup.com/workplace
-* Lancaster, L. (2024, August 16). Effects of High Turnover Among Employees. https://stratus.hr/resources/effects-of-high-employee-turnover
+* Herbert, N. (2025, January 14). Mentoring New Employees During the Onboarding Process. Chronus. https://chronus.com/blog/mentoring-new-employees
+* Holliday, M. (2021, December 8).What Is Diagnostic Analytics? How It Works and Examples. NetSuite. https://www.netsuite.com/portal/resource/articles/data-warehouse/diagnostic-analytics.shtml
 * Kaggle. (n.d.). Employee Turnover Analystics Dataset. https://www.kaggle.com/datasets/akshayhedau/employee-turnover-analytics-dataset?resource=download
+* Kelly, R. (2024, August 9). Descriptive Analytics: What It Is and Related Terms. Investopedia. https://www.investopedia.com/terms/d/descriptive-analytics.asp
+* Lancaster, L. (2024, August 16). Effects of High Turnover Among Employees. https://stratus.hr/resources/effects-of-high-employee-turnover
+* Morris, A. (2021, July 7). Descriptive Analytics Defined: Benefits & Examples. NetSuite. https://www.netsuite.com/portal/resource/articles/erp/descriptive-analytics.shtml
 * Ramos, P. R. (2019). The effectiveness of compensation in maintaining employee retention. Social Sciences & Humanities Open, 1, Article 100001. https://doi.org/10.1016/j.ssaho.2019.100001
+* Ward, N. (2024, May 1). Here’s How Mentoring Increases Employee Retention. MentorcliQ. https://www.mentorcliq.com/blog/mentoring-increases-employee-retention
 
  
 
