@@ -32,7 +32,8 @@ fig = px.histogram(data_frame=df,
                    x=feature,
                    color='left_label',
                    title=f"Distribution of {feature.replace('_', ' ').capitalize()} by Employee Attrition",
-                   labels={feature: feature.replace("_", " ").capitalize()}
+                   labels={feature: feature.replace("_", " ").capitalize()},
+                   barmode='group'
                    )
 
 st.plotly_chart(fig, use_container_width=True)
