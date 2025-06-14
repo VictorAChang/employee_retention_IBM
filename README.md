@@ -91,7 +91,7 @@ Diagnostic analytics is a method in data analysis that digs into historical data
 
 <b style="font-size: 110%;"> Heatmap </b>
 
-<img src="image.png">
+<img src="images/image.png">
 
 </div>
 
@@ -108,7 +108,7 @@ Descriptive analytics refers to the process of examining historical data to answ
 
 <b style="font-size: 110%;"> Histogram </b> </br>
 
-<img src="image-1.png">
+<img src="images/image-1.png">
 
 </div>
 
