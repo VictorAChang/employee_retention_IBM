@@ -28,13 +28,11 @@ feature = st.selectbox(
 # Map 'left' to more human-readable labels
 df["left_label"] = df["left"].map({0: "Stayed", 1: "Left"})
 
-fig = px.histogram(
-    df,
-    y=feature,
-    x="left_label",
-    color="left_label",
-    title=f"Distribution of {feature.replace('_', ' ').capitalize()} by Employee Status",
-    labels={"left_label": "Employee Status", feature: feature.replace("_", " ").capitalize()}
-)
+fig = px.histogram(data_frame=df, 
+                   x=feature,
+                   color='left_label',
+                   title=f"Distribution of {feature.replace('_', ' ').capitalize()} by Employee Attrition",
+                   labels={feature: feature.replace("_", " ").capitalize()}
+                   )
 
 st.plotly_chart(fig, use_container_width=True)
